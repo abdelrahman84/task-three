@@ -1,0 +1,22 @@
+<form [formGroup]="this.productServiceService.form">
+  <input placeholder="Image URL" 
+         formControlName="productimage" 
+         type="text">
+         <br>
+        
+  <input placeholder="Product name" 
+         formControlName="producatName" 
+         type="text">
+         <br>
+
+<input placeholder="Product price" 
+         formControlName="productPrice" 
+         type="text">
+
+         <br>
+
+         <button (click)="onSubmit()">
+          Submit
+        </button>
+       
+</form>
